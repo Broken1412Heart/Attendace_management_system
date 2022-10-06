@@ -397,6 +397,7 @@ def subjectchoose():
                 try:
                     global cursor
                     connection = pymysql.connect(host='localhost', user='root', password='', db='Face_reco_fill')
+                    #need to change connection
                     cursor = connection.cursor()
                 except Exception as e:
                     print(e)
